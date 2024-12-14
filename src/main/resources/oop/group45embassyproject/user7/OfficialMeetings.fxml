@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.ramisa.user7.Official.ApproveOrDenyController">
+   <children>
+      <Label layoutX="195.0" layoutY="151.0" prefHeight="17.0" prefWidth="75.0" text=" Meeting ID:" />
+      <DatePicker fx:id="MeetingDateDatePicker" layoutX="162.0" layoutY="279.0" />
+      <Button layoutX="239.0" layoutY="324.0" mnemonicParsing="false" onAction="#addToMeetingListButtonOnAction" prefHeight="56.0" prefWidth="156.0" style="-fx-border-color: #e88223;" text="Add To Meeting List">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="191.0" layoutY="198.0" prefHeight="17.0" prefWidth="94.0" text="Meeting Type:" />
+      <ComboBox fx:id="MeetingTypeComboBoxFxid" layoutX="289.0" layoutY="194.0" prefWidth="150.0" />
+      <TextField fx:id="MeetingIDTextFieldFxid" layoutX="289.0" layoutY="147.0" />
+      <Label layoutX="168.0" layoutY="251.0" prefHeight="17.0" prefWidth="149.0" text="   Official Meeting Date:" />
+      <Label layoutX="393.0" layoutY="251.0" prefHeight="17.0" prefWidth="33.0" text=" Time:" />
+      <TextField fx:id="MeetingtimeTextFieldFxid1" layoutX="386.0" layoutY="279.0" prefHeight="25.0" prefWidth="107.0" />
+      <Label layoutX="229.0" layoutY="35.0" prefHeight="47.0" prefWidth="177.0" text="   Official Meetings   " textFill="#e88223" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

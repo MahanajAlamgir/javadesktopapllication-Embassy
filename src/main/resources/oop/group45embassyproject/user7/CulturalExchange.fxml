@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.ramisa.user7.Official.CulturalExchanController">
+   <children>
+      <Label layoutX="206.0" layoutY="14.0" prefHeight="45.0" prefWidth="269.0" text="  Cultural Exchange Programs  " textFill="#e88223" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpaneFxid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.ramisa.user7.Official.DashboardController">
+   <left>
+      <VBox fx:id="vboxFxid" prefHeight="358.0" prefWidth="104.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#DiplomaticEngDashboardButtonOnAction" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Dashboard" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OfficialMeetingsAmButtonOnAction" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Official Meetings">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DiplomaticRelationsButtonOnAction" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Diplomatic Relations">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#EmbassyOperationsButtonOnAction" prefHeight="46.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Embassy Operations">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DecisionsButtonOnAction" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Decisions" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#MediaRelationsButtonOnAction" prefHeight="47.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Media Relations">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#CrisisManagementButtonOnAction" prefHeight="67.0" prefWidth="104.0" style="-fx-background-color: Emergency Assistance;" text="Crisis Management">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ReportingButtonOnAction" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Reporting">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DiplomaticEngagementsButtonOnAction" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Diplomatic Engagements" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorpanelFxid" prefHeight="382.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="120.0" prefHeight="82.0" prefWidth="307.0" text="         Ambassador's Dashboard        " textFill="#e88223" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label fx:id="labelnotiyFxid" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

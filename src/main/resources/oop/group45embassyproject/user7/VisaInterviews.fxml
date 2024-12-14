@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.ramisa.user7.Official.VisaInterviewController">
+   <children>
+      <AnchorPane layoutX="-17.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="visaInterviewTableViewFxid" layoutX="20.0" layoutY="42.0" prefHeight="317.0" prefWidth="591.0">
+               <columns>
+                  <TableColumn fx:id="visaInterviewIdTableViewFxid" prefWidth="63.0" text="ID" />
+                  <TableColumn fx:id="visaInterviewNameTableViewFxid" prefWidth="76.0" text="Name" />
+                  <TableColumn fx:id="visaInterviewEmailTableViewFxid" prefWidth="125.0" text="Email" />
+                  <TableColumn fx:id="visaInterviewVisaTypeTableViewFxid" prefWidth="85.0" text="Visa Type" />
+                  <TableColumn fx:id="interviewDateTableViewFxid" prefWidth="93.0" text="Interview Date" />
+                  <TableColumn fx:id="TimeTableViewFxid" prefWidth="75.0" text="Time" />
+                  <TableColumn fx:id="resultTableViewFxid1" prefWidth="69.0" text="Result" />
+               </columns>
+            </TableView>
+            <Label layoutX="215.0" prefHeight="43.0" prefWidth="171.0" text="  Visa Interviews  " textFill="#e88223" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="455.0" layoutY="361.0" mnemonicParsing="false" onAction="#sendApprovalEmailOnAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #e88223;" text="Send Approval Email" />
+            <Button layoutX="77.0" layoutY="361.0" mnemonicParsing="false" onAction="#showOnlyApprovedOnAction" text="Show only approved applications" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

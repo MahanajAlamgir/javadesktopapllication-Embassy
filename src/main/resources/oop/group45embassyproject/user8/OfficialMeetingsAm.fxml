@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.Ramisa.user8.OfficialMeetingsAm">
+   <children>
+      <Label layoutX="203.0" layoutY="14.0" prefHeight="47.0" prefWidth="177.0" text="   Official Meetings   " textFill="#e88223" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="OfficialMeetingsTableviewFxid" layoutX="42.0" layoutY="72.0" prefHeight="241.0" prefWidth="517.0">
+         <columns>
+            <TableColumn fx:id="OfficialMeetingstoAttendTableviewFxid" prefWidth="185.0" text=" Meeting Type" />
+            <TableColumn fx:id="OfficialMeetingsDateTimeTableviewFxid" prefWidth="202.0" text="Date and Time" />
+            <TableColumn fx:id="MeetingIdTableviewFxid1" prefWidth="129.0" text="Meeting ID" />
+         </columns>
+      </TableView>
+      <Button layoutX="400.0" layoutY="328.0" mnemonicParsing="false" onAction="#confirmMeetingOnAction" prefHeight="47.0" prefWidth="144.0" style="-fx-border-color: #e88223;" text="Confirm Meetings">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

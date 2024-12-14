@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpaneFxid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.ramisa.user7.Official.DashboardController">
+   <left>
+      <VBox fx:id="vboxFxid" prefHeight="358.0" prefWidth="104.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#DashboardButtonOnAction" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#visaApplicationsButtonOnAction" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Visa Applications">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#VisaInterviewsButtonOnAction" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: transparent;" text=" Visa Interviews">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LegalDocsButtonOnAction" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Legal Documentation">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#CulturalButtonOnAction" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="Cultural Exchange Programs" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OfficialMeetingsButtonOnAction" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Official Meetings">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#tradeInitiativesButtonOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Trade Initiatives">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#GovernmentLiaisonButtonOnAction" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: Emergency Assistance;" text="Government Liaison">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#EmergencyAssistanceButtonOnAction" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="Emergency Assistance">
+               <font>
+                  <Font name="System Bold" size="8.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="anchorpanelFxid" prefHeight="382.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="120.0" prefHeight="82.0" prefWidth="256.0" text="         Officials Dashboard        " textFill="#e88223" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label fx:id="labelnotiyFxid" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
