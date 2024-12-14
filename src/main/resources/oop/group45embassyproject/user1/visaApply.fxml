@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="1380.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.group45embassyproject.user1.VisaApplyController">
+   <children>
+      <Label alignment="CENTER" layoutX="245.0" layoutY="14.0" prefHeight="33.0" prefWidth="243.0" style="-fx-background-color: #039dfc;" text="My Application Form" />
+      <Label layoutX="14.0" layoutY="92.0" prefHeight="17.0" prefWidth="75.0" text="Full Name" />
+      <Label layoutX="9.0" layoutY="131.0" prefHeight="17.0" prefWidth="85.0" text="Father's Name" />
+      <Label layoutX="9.0" layoutY="165.0" prefHeight="17.0" prefWidth="85.0" text="Mother's Name" />
+      <TextField layoutX="109.0" layoutY="88.0" />
+      <TextField layoutX="109.0" layoutY="127.0" />
+      <TextField layoutX="109.0" layoutY="161.0" />
+      <Label layoutX="291.0" layoutY="92.0" prefHeight="17.0" prefWidth="75.0" text="Gender" />
+      <RadioButton layoutX="389.0" layoutY="92.0" mnemonicParsing="false" text="Male" />
+      <RadioButton layoutX="473.0" layoutY="92.0" mnemonicParsing="false" text="Female" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="55.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #03fc3d;" text="Personal Information" />
+      <Label layoutX="291.0" layoutY="118.0" prefHeight="17.0" prefWidth="75.0" text="Date of Birth" />
+      <DatePicker layoutX="382.0" layoutY="114.0" />
+      <Label layoutX="291.0" layoutY="152.0" prefHeight="17.0" prefWidth="75.0" text="Place of Birth" />
+      <TextField layoutX="382.0" layoutY="148.0" />
+      <Label layoutX="291.0" layoutY="189.0" prefHeight="17.0" prefWidth="75.0" text="Nationality" />
+      <TextField layoutX="382.0" layoutY="185.0" />
+      <Label layoutX="16.0" layoutY="226.0" prefHeight="17.0" prefWidth="75.0" text="Marital Status" />
+      <RadioButton layoutX="109.0" layoutY="226.0" mnemonicParsing="false" text="Single" />
+      <RadioButton layoutX="201.0" layoutY="226.0" mnemonicParsing="false" text="Married" />
+      <RadioButton layoutX="294.0" layoutY="226.0" mnemonicParsing="false" text="Divorced" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="253.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #03fc3d;" text="Passport Information" />
+      <Label layoutX="14.0" layoutY="286.0" prefHeight="17.0" prefWidth="116.0" text="Passport Number" />
+      <TextField layoutX="141.0" layoutY="282.0" />
+      <Label layoutX="14.0" layoutY="321.0" prefHeight="17.0" prefWidth="116.0" text="Place of Issue" />
+      <TextField layoutX="141.0" layoutY="317.0" />
+      <Label layoutX="329.0" layoutY="286.0" prefHeight="17.0" prefWidth="75.0" text="Date of Issue" />
+      <DatePicker layoutX="425.0" layoutY="282.0" />
+      <Label layoutX="328.0" layoutY="321.0" prefHeight="17.0" prefWidth="75.0" text="Date of Expiry" />
+      <DatePicker layoutX="425.0" layoutY="317.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="361.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #03fc3d;" text="Contact  Information" />
+      <Label layoutX="339.0" layoutY="394.0" prefHeight="17.0" prefWidth="85.0" text="E-mail" />
+      <TextField layoutX="437.0" layoutY="390.0" />
+      <Label layoutX="324.0" layoutY="433.0" prefHeight="17.0" prefWidth="85.0" text="Phone Number" />
+      <TextField layoutX="437.0" layoutY="429.0" />
+      <Label layoutX="9.0" layoutY="416.0" prefHeight="17.0" prefWidth="116.0" text="Residential Address" />
+      <TextField layoutX="130.0" layoutY="394.0" prefHeight="61.0" prefWidth="190.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="472.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #03fc3d;" text="Travel   Information" />
+      <Label layoutX="16.0" layoutY="503.0" prefHeight="17.0" prefWidth="85.0" text="Purpose of Visit" />
+      <RadioButton layoutX="126.0" layoutY="503.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" text="Tourism" />
+      <RadioButton layoutX="207.0" layoutY="503.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="69.0" text="Business" />
+      <RadioButton layoutX="288.0" layoutY="503.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="85.0" text="Education" />
+      <RadioButton layoutX="381.0" layoutY="503.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="85.0" text=" Work " />
+      <RadioButton layoutX="460.0" layoutY="503.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="85.0" text="Others" />
+      <Label layoutX="16.0" layoutY="532.0" prefHeight="17.0" prefWidth="190.0" text="Intended Duration of Stay (in days):" />
+      <TextField layoutX="225.0" layoutY="528.0" />
+      <Label layoutX="14.0" layoutY="559.0" prefHeight="17.0" prefWidth="190.0" text="Date of Arrival (DD/MM/YYYY)" />
+      <DatePicker layoutX="212.0" layoutY="555.0" />
+      <Label layoutX="6.0" layoutY="589.0" prefHeight="17.0" prefWidth="190.0" text="Date of Departure (DD/MM/YYYY)" />
+      <DatePicker layoutX="212.0" layoutY="585.0" />
+      <Label layoutX="14.0" layoutY="634.0" prefHeight="17.0" prefWidth="190.0" text="Address in Destination Country" />
+      <TextField layoutX="213.0" layoutY="612.0" prefHeight="61.0" prefWidth="175.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="683.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #03fc3d;" text="Additional Information" />
+      <Label layoutX="16.0" layoutY="714.0" prefHeight="17.0" prefWidth="235.0" text="Have you ever been denied a visa before?" />
+      <RadioButton layoutX="264.0" layoutY="714.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="48.0" text="YES" />
+      <RadioButton layoutX="339.0" layoutY="714.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="48.0" text="NO" />
+      <Label layoutX="12.0" layoutY="738.0" prefHeight="17.0" prefWidth="235.0" text="Do you have any criminal record?" />
+      <RadioButton layoutX="267.0" layoutY="738.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="48.0" text="YES" />
+      <RadioButton layoutX="342.0" layoutY="738.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="48.0" text="NO" />
+      <Button layoutX="241.0" layoutY="778.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" style="-fx-background-color: #c203fc;" text="CONFIRM APPLY" />
+      <TableView layoutX="4.0" layoutY="845.0" prefHeight="96.0" prefWidth="648.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="FULL NAME" />
+            <TableColumn prefWidth="105.33330535888672" text="FATHER'S NAME" />
+            <TableColumn prefWidth="105.33330535888672" text="MOTHER'S NAME" />
+            <TableColumn prefWidth="65.33331298828125" text="GENDER" />
+            <TableColumn prefWidth="111.33331298828125" text="Date of Birth" />
+            <TableColumn prefWidth="91.33331298828125" text="Place of Birth" />
+            <TableColumn prefWidth="91.33331298828125" text="Nationality" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="219.0" layoutY="818.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #039dfc;" text="Personal Information Of Passenger" />
+      <TableView layoutX="7.0" layoutY="975.0" prefHeight="96.0" prefWidth="670.0">
+         <columns>
+            <TableColumn prefWidth="144.0" text="Passport Number" />
+            <TableColumn prefWidth="166.00001525878906" text="Place of Issue" />
+            <TableColumn prefWidth="152.66668701171875" text="Date of Issue" />
+            <TableColumn prefWidth="204.66665649414062" text="Date of Expiry" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="219.0" layoutY="950.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #039dfc;" text="Personal Information Of Passenger" />
+      <TableView layoutX="14.0" layoutY="1106.0" prefHeight="96.0" prefWidth="670.0">
+         <columns>
+            <TableColumn prefWidth="282.66663646698" text="Residential Address" />
+            <TableColumn prefWidth="200.66668701171875" text="E-mail" />
+            <TableColumn prefWidth="185.99996948242188" text="Phone Number" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="230.0" layoutY="1082.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #039dfc;" text="Contact  Information Of Passenger" />
+      <Label alignment="CENTER" layoutX="230.0" layoutY="1209.0" prefHeight="17.0" prefWidth="223.0" style="-fx-background-color: #039dfc;" text="Contact  Information Of Passenger" />
+      <TableView layoutX="7.0" layoutY="1235.0" prefHeight="96.0" prefWidth="648.0">
+         <columns>
+            <TableColumn prefWidth="110.6666898727417" text="Purpose of Visit" />
+            <TableColumn prefWidth="153.33329010009766" text="Intended Duration of Stay (in days):" />
+            <TableColumn prefWidth="132.00006103515625" text="Date of Arrival (DD/MM/YYYY)" />
+            <TableColumn prefWidth="113.33328247070312" text="Date of Departure (DD/MM/YYYY)" />
+            <TableColumn prefWidth="137.3333740234375" text="Address in Destination Country" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

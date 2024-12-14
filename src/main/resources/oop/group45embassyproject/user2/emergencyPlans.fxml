@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="561.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.securitymanager.EmergencyPlansController">
+   <children>
+      <Label alignment="CENTER" layoutX="204.0" layoutY="14.0" prefHeight="17.0" prefWidth="205.0" style="-fx-background-color: red;" text="Emergency Response Plans" />
+      <Label layoutX="28.0" layoutY="47.0" text="Emergency Situation" />
+      <Label layoutX="28.0" layoutY="78.0" text="Plan Code" />
+      <Label layoutX="28.0" layoutY="108.0" text="Response Actions" />
+      <Label layoutX="28.0" layoutY="140.0" text="Response Team" />
+      <Label layoutX="34.0" layoutY="171.0" text="Last Updated" />
+      <TextField layoutX="188.0" layoutY="43.0" />
+      <TextField layoutX="188.0" layoutY="74.0" />
+      <TextField layoutX="188.0" layoutY="104.0" />
+      <TextField layoutX="188.0" layoutY="136.0" />
+      <TextField layoutX="188.0" layoutY="167.0" />
+      <Button layoutX="198.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Confirm" />
+      <Button layoutX="173.0" layoutY="475.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Save Updates" />
+      <TableView layoutX="11.0" layoutY="261.0" prefHeight="200.0" prefWidth="572.0">
+         <columns>
+            <TableColumn prefWidth="129.33331298828125" text="Emergency Situation" />
+            <TableColumn prefWidth="89.33334350585938" text="Plan Code" />
+            <TableColumn prefWidth="117.33331298828125" text="Response Actions" />
+            <TableColumn prefWidth="124.66668701171875" text="Response Team" />
+            <TableColumn prefWidth="107.33331298828125" text="Last Updated" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

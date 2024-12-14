@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="1162.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.group45embassyproject.user1.CitizenshipServicesController">
+   <children>
+      <Label alignment="CENTER" layoutX="185.0" layoutY="14.0" prefHeight="33.0" prefWidth="252.0" style="-fx-background-color: #a88932;" text="Citizenship  Application" wrapText="true" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="93.0" prefHeight="17.0" prefWidth="82.0" text="Full Name" />
+      <TextField fx:id="fullNameTextField" layoutX="131.0" layoutY="89.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="123.0" prefHeight="17.0" prefWidth="82.0" text="Date Of Birth" />
+      <TextField fx:id="dobTextField" layoutX="131.0" layoutY="119.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="151.0" prefHeight="17.0" prefWidth="114.0" text="Previous Address" />
+      <TextField fx:id="preAddressTextField" layoutX="131.0" layoutY="147.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="184.0" prefHeight="17.0" prefWidth="114.0" text="Current Address" />
+      <TextField fx:id="curAddressTextField" layoutX="131.0" layoutY="180.0" />
+      <Label alignment="CENTER" layoutX="300.0" layoutY="142.0" prefHeight="17.0" prefWidth="82.0" text="Email" />
+      <TextField fx:id="emailTextField" layoutX="417.0" layoutY="138.0" />
+      <Label alignment="CENTER" layoutX="300.0" layoutY="105.0" prefHeight="17.0" prefWidth="82.0" text="Phone Number" />
+      <TextField fx:id="phoneNumberTextField" layoutX="417.0" layoutY="101.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="215.0" prefHeight="17.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Identity Documents" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="62.0" prefHeight="17.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Personal Information" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="254.0" prefHeight="17.0" prefWidth="114.0" text="Passport No" />
+      <TextField fx:id="passPortNoTextField" layoutX="137.0" layoutY="250.0" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="290.0" prefHeight="17.0" prefWidth="114.0" text="Birth Certificate No" />
+      <TextField fx:id="birthCertificateTextField" layoutX="137.0" layoutY="286.0" />
+      <Label alignment="CENTER" layoutX="311.0" layoutY="251.0" prefHeight="17.0" prefWidth="114.0" text="NID Number" />
+      <TextField fx:id="nidNumberTextField" layoutX="428.0" layoutY="247.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="318.0" prefHeight="17.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Immigration Details" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="353.0" prefHeight="17.0" prefWidth="157.0" text="Proof of legal Residence" />
+      <TextField fx:id="travelRecordsTextField" layoutX="473.0" layoutY="349.0" />
+      <TextField fx:id="detailsOfCurVisaTF" layoutX="171.0" layoutY="384.0" />
+      <TextField fx:id="legalResiTextField" layoutX="171.0" layoutY="349.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="388.0" prefHeight="17.0" prefWidth="157.0" text="Details of Your Current Visa" />
+      <Label alignment="CENTER" layoutX="349.0" layoutY="353.0" prefHeight="17.0" prefWidth="157.0" text="Travel Records" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="421.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Family Information" textAlignment="CENTER" textFill="#d04545" />
+      <TextField fx:id="mothersNationTextField" layoutX="502.0" layoutY="483.0" />
+      <Label alignment="CENTER" layoutX="338.0" layoutY="487.0" prefHeight="17.0" prefWidth="157.0" text="Mother's Nationality" />
+      <TextField fx:id="fathersNationTextField" layoutX="502.0" layoutY="454.0" />
+      <Label alignment="CENTER" layoutX="334.0" layoutY="458.0" prefHeight="17.0" prefWidth="157.0" text="Father's Nationality" />
+      <TextField fx:id="mothersNameTextField" layoutX="171.0" layoutY="483.0" />
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="487.0" prefHeight="17.0" prefWidth="157.0" text="Mother's Name" />
+      <TextField fx:id="fathersNameTextField" layoutX="171.0" layoutY="454.0" />
+      <Label alignment="CENTER" layoutX="10.0" layoutY="458.0" prefHeight="17.0" prefWidth="157.0" text="Father's Name" />
+      <Label alignment="CENTER" layoutX="10.0" layoutY="516.0" prefHeight="17.0" prefWidth="157.0" text="Marital Status" />
+      <RadioButton fx:id="marriedRadioButton" layoutX="162.0" layoutY="516.0" mnemonicParsing="false" text="Married" />
+      <RadioButton fx:id="separatedRadioButton" layoutX="267.0" layoutY="516.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" text="Separated" />
+      <RadioButton fx:id="singleRadioButton" layoutX="361.0" layoutY="516.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" text="Single" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="544.0" prefHeight="17.0" prefWidth="421.0" text="If you ever married ,how many kids do you have?" />
+      <TextField fx:id="haveKidsTextField" layoutX="413.0" layoutY="540.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="565.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Financial Records" textAlignment="CENTER" textFill="#d04545" />
+      <Label alignment="CENTER" layoutX="17.0" layoutY="601.0" prefHeight="17.0" prefWidth="157.0" text="Proof of income " />
+      <TextField fx:id="incomeTextField" layoutX="192.0" layoutY="597.0" />
+      <Label alignment="CENTER" layoutX="356.0" layoutY="601.0" prefHeight="17.0" prefWidth="157.0" text="Bank statements" />
+      <TextField fx:id="bankTextField" layoutX="513.0" layoutY="597.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="629.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Integration Evidence:" textAlignment="CENTER" textFill="#d04545" />
+      <Label alignment="CENTER" layoutX="17.0" layoutY="664.0" prefHeight="17.0" prefWidth="252.0" text="Certificates or proof of community involvement" />
+      <TextField fx:id="communityInvolvTextField" layoutX="274.0" layoutY="660.0" />
+      <Label alignment="CENTER" layoutX="4.0" layoutY="693.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-color: #6132a8;" text="Criminal Background" textAlignment="CENTER" textFill="#d04545" />
+      <Label alignment="CENTER" layoutX="11.0" layoutY="728.0" prefHeight="17.0" prefWidth="252.0" text="Do you have any criminal Record" />
+      <RadioButton fx:id="yesRB" layoutX="268.0" layoutY="728.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="noRB" layoutX="353.0" layoutY="728.0" mnemonicParsing="false" text="NO" />
+      <Label alignment="CENTER" layoutX="301.0" layoutY="184.0" prefHeight="17.0" prefWidth="82.0" text="Language" />
+      <CheckBox fx:id="englishCheckBox" layoutX="389.0" layoutY="184.0" mnemonicParsing="false" text="English" />
+      <CheckBox fx:id="banglaCheckBox" layoutX="461.0" layoutY="184.0" mnemonicParsing="false" text="Bangla" />
+      <CheckBox fx:id="spanishCheckBox" layoutX="548.0" layoutY="184.0" mnemonicParsing="false" text="Spanish" />
+      <Button layoutX="155.0" layoutY="758.0" mnemonicParsing="false" onAction="#confirmApplicationOnMouseClicked" prefHeight="25.0" prefWidth="353.0" style="-fx-background-color: #a8326d;" text="Confirm My Application" />
+      <TableView fx:id="citizenshipTableView" layoutX="8.0" layoutY="816.0" prefHeight="200.0" prefWidth="747.0">
+         <columns>
+            <TableColumn fx:id="fullNameTC" prefWidth="115.9999942779541" text="Full Name" />
+            <TableColumn fx:id="curAddressTC" prefWidth="160.6666717529297" text="Current address" />
+            <TableColumn fx:id="passNoTC" prefWidth="134.6666259765625" text="Passport No" />
+            <TableColumn fx:id="communityInvolvTC" prefWidth="188.00009155273438" text="Certificates or proof of community involvement" />
+            <TableColumn fx:id="legalResiTC" prefWidth="160.6666717529297" text="Proof of legal Residence" />
+         </columns>
+      </TableView>
+      <Line endX="661.0" layoutX="109.0" layoutY="799.0" startX="-109.00000762939453" />
+      <TextArea layoutX="115.0" layoutY="1062.0" prefHeight="85.0" prefWidth="533.0" style="-fx-background-color: #a83242;" />
+   </children>
+</AnchorPane>

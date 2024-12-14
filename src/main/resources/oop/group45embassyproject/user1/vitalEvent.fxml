@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="610.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.group45embassyproject.user1.VitalEventController">
+   <children>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="14.0" prefHeight="17.0" prefWidth="216.0" style="-fx-background-color: #fc0328;" text="Report Vital Events" />
+      <Label layoutX="27.0" layoutY="125.0" prefHeight="17.0" prefWidth="121.0" text="Address" />
+      <TextField layoutX="152.0" layoutY="121.0" />
+      <Label layoutX="27.0" layoutY="93.0" prefHeight="17.0" prefWidth="121.0" text="Full Name" />
+      <TextField layoutX="152.0" layoutY="89.0" />
+      <Label layoutX="27.0" layoutY="46.0" prefHeight="17.0" prefWidth="96.0" style="-fx-background-color: #fce303;" text="Choose Event" />
+      <CheckBox layoutX="132.0" layoutY="46.0" mnemonicParsing="false" text="Birth" />
+      <CheckBox layoutX="227.0" layoutY="46.0" mnemonicParsing="false" text="Death" />
+      <CheckBox layoutX="318.0" layoutY="46.0" mnemonicParsing="false" text="Marriage" />
+      <CheckBox layoutX="443.0" layoutY="46.0" mnemonicParsing="false" text="Other vital events" />
+      <Label layoutX="318.0" layoutY="93.0" prefHeight="17.0" prefWidth="121.0" text="event date" />
+      <DatePicker layoutX="406.0" layoutY="89.0" />
+      <Label layoutX="305.0" layoutY="125.0" prefHeight="17.0" prefWidth="81.0" text="Time" />
+      <TextField layoutX="386.0" layoutY="121.0" />
+      <Label layoutX="27.0" layoutY="160.0" prefHeight="17.0" prefWidth="121.0" text="Birth certificate ID" />
+      <TextField layoutX="152.0" layoutY="156.0" />
+      <Label layoutX="27.0" layoutY="191.0" prefHeight="17.0" prefWidth="121.0" text="Death certificate ID" />
+      <TextField layoutX="152.0" layoutY="187.0" />
+      <Label layoutX="27.0" layoutY="224.0" prefHeight="17.0" prefWidth="121.0" text="Marriage certificate ID" />
+      <TextField layoutX="152.0" layoutY="220.0" />
+      <Label layoutX="318.0" layoutY="160.0" prefHeight="17.0" prefWidth="121.0" text="If required" />
+      <Label layoutX="318.0" layoutY="191.0" prefHeight="17.0" prefWidth="121.0" text="If required" />
+      <Label layoutX="318.0" layoutY="224.0" prefHeight="17.0" prefWidth="121.0" text="If required" />
+      <TableView layoutX="12.0" layoutY="291.0" prefHeight="200.0" prefWidth="575.0">
+         <columns>
+            <TableColumn prefWidth="95.33331298828125" text="Choose Event" />
+            <TableColumn prefWidth="93.33334350585938" text="Full Name" />
+            <TableColumn prefWidth="93.33334350585938" text="Birth certificate ID" />
+            <TableColumn prefWidth="93.33334350585938" text="Death certificate ID" />
+            <TableColumn prefWidth="93.33334350585938" text="Marriage certificate ID" />
+         </columns>
+      </TableView>
+      <Button layoutX="197.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Confirm" />
+      <TextArea layoutX="72.0" layoutY="522.0" prefHeight="43.0" prefWidth="451.0" style="-fx-background-color: red;" />
+   </children>
+</AnchorPane>

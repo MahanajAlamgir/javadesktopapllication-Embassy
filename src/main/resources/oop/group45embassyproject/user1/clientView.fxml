@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="124.0" layoutY="14.0" prefHeight="37.0" prefWidth="338.0" style="-fx-background-color: #fcba03;" text="Embassy Of Japan In Bangladesh" />
+      <Button layoutX="5.0" layoutY="71.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="120.0" text="Visa Application" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="468.0" layoutY="185.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="117.0" text="My Event" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="468.0" layoutY="119.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="117.0" text="Emergency Assistance" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="6.0" layoutY="279.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="117.0" text="Renew  Passport" />
+      <Button layoutY="228.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="117.0" text="Passport Services" />
+      <Button layoutY="344.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="117.0" text="Vital  Events" />
+      <Button layoutX="468.0" layoutY="237.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="117.0" text="Medical Travel" />
+      <Button layoutX="468.0" layoutY="294.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="117.0" text="Help for Legal Issues" textAlignment="CENTER" wrapText="true" />
+      <Button layoutY="132.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="118.0" text="Apply for CitizenshipServices" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

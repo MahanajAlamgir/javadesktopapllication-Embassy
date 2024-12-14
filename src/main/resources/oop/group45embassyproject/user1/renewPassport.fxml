@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="584.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop.group45embassyproject.user1.RenewPassportController">
+   <children>
+      <Label alignment="CENTER" layoutX="141.0" layoutY="14.0" prefHeight="17.0" prefWidth="380.0" style="-fx-background-color: #fcba03;" text="PassportServices" />
+      <Label layoutX="30.0" layoutY="44.0" prefHeight="17.0" prefWidth="109.0" text="Passport Service" />
+      <RadioButton layoutX="158.0" layoutY="44.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="147.0" text="BeginNewApplication" />
+      <RadioButton layoutX="331.0" layoutY="44.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="147.0" text="Renew ExistingPassport" />
+      <Label alignment="CENTER" layoutX="22.0" layoutY="73.0" prefHeight="17.0" prefWidth="219.0" style="-fx-background-color: #ebfc03;" text="Proof of Citizenship" />
+      <Label layoutX="22.0" layoutY="102.0" prefHeight="17.0" prefWidth="109.0" text="Birth certificate No" />
+      <TextField layoutX="132.0" layoutY="98.0" />
+      <Label layoutX="300.0" layoutY="102.0" prefHeight="17.0" prefWidth="85.0" text="NID No" />
+      <TextField layoutX="410.0" layoutY="98.0" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="130.0" prefHeight="17.0" prefWidth="219.0" style="-fx-background-color: #ebfc03;" text="Proof of Identity" />
+      <Label layoutX="22.0" layoutY="157.0" prefHeight="17.0" prefWidth="109.0" text="Proof of Identity" />
+      <TextField layoutX="132.0" layoutY="153.0" />
+      <Label layoutX="300.0" layoutY="157.0" prefHeight="17.0" prefWidth="109.0" text="Passport ID" />
+      <TextField layoutX="410.0" layoutY="153.0" />
+      <Label alignment="CENTER" layoutX="12.0" layoutY="186.0" prefHeight="17.0" prefWidth="219.0" style="-fx-background-color: #ebfc03;" text="Payment Method" />
+      <RadioButton layoutX="12.0" layoutY="211.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="62.0" text="Cash" />
+      <RadioButton layoutX="91.0" layoutY="211.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="62.0" text="Card" />
+      <RadioButton layoutX="176.0" layoutY="211.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="62.0" text="checks" />
+      <TableView layoutX="9.0" layoutY="282.0" prefHeight="200.0" prefWidth="635.0">
+         <columns>
+            <TableColumn prefWidth="107.99999713897705" text="Passport Service" />
+            <TableColumn prefWidth="117.3333511352539" text="Birth certificate No" />
+            <TableColumn minWidth="0.0" prefWidth="182.6666717529297" text="Proof of Identity" />
+            <TableColumn minWidth="0.0" prefWidth="182.6666717529297" text="Payment Method" />
+         </columns>
+      </TableView>
+      <Button layoutX="232.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="196.0" text="CONFIRM" />
+      <TextArea layoutX="107.0" layoutY="494.0" prefHeight="40.0" prefWidth="443.0" style="-fx-background-color: #fc0328;" />
+   </children>
+</AnchorPane>

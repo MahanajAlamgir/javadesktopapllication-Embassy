@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="1230.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="25.0" layoutY="49.0" prefHeight="17.0" prefWidth="77.0" text="Full Name" />
+      <TextField fx:id="fullNameTF" layoutX="164.0" layoutY="45.0" />
+      <Label layoutX="21.0" layoutY="85.0" prefHeight="17.0" prefWidth="86.0" text="Phone Number" />
+      <Label layoutX="357.0" layoutY="85.0" prefHeight="17.0" prefWidth="77.0" text="E-mail" />
+      <TextField fx:id="phoneNumberTF" layoutX="164.0" layoutY="81.0" />
+      <TextField fx:id="emailTF" layoutX="453.0" layoutY="73.0" />
+      <Label layoutX="10.0" layoutY="120.0" prefHeight="55.0" prefWidth="133.0" text="Embassy Registration Number (if applicable)" wrapText="true" />
+      <TextField fx:id="embassyNumberTF" layoutX="164.0" layoutY="132.0" />
+      <Label alignment="CENTER" layoutX="16.0" layoutY="512.0" prefHeight="17.0" prefWidth="218.0" style="-fx-background-color: green;" text="Specific Details (Based on Selection)" />
+      <Label layoutX="351.0" layoutY="230.0" prefHeight="40.0" prefWidth="165.0" text="Relationship to Emergency Contact" wrapText="true" />
+      <Label layoutX="21.0" layoutY="194.0" prefHeight="17.0" prefWidth="99.0" text="Current Location" />
+      <TextField fx:id="emergencyphoneTF" layoutX="164.0" layoutY="256.0" />
+      <TextField fx:id="locationTF" layoutX="164.0" layoutY="190.0" />
+      <Label layoutX="16.0" layoutY="222.0" prefHeight="33.0" prefWidth="141.0" text="Emergency Contact Name" />
+      <TextField fx:id="emergencynameTF" layoutX="164.0" layoutY="226.0" />
+      <TextField fx:id="relationshipTF" layoutX="535.0" layoutY="237.0" />
+      <Label layoutX="12.0" layoutY="260.0" prefHeight="17.0" prefWidth="149.0" text="Emergency Contact Phone" />
+      <Label alignment="CENTER" layoutX="11.0" layoutY="369.0" prefHeight="17.0" prefWidth="182.0" style="-fx-background-color: green;" text="Emergency Type (Select One)" />
+      <Label layoutX="20.0" layoutY="542.0" prefHeight="17.0" prefWidth="165.0" text="For Lost Passport:" />
+      <TextField fx:id="passportNumberTF" layoutX="286.0" layoutY="567.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label layoutX="37.0" layoutY="571.0" prefHeight="17.0" prefWidth="228.0" text="Passport Number: [Enter if known]" />
+      <TextField fx:id="countryTF" layoutX="286.0" layoutY="604.0" prefHeight="25.0" prefWidth="242.0" />
+      <Button layoutX="206.0" layoutY="864.0" mnemonicParsing="false" onAction="#confirmOnAction" prefHeight="25.0" prefWidth="228.0" text="Confirm" />
+      <TextArea layoutX="184.0" layoutY="1150.0" prefHeight="66.0" prefWidth="272.0" style="-fx-background-color: red;" />
+      <Label layoutX="16.0" layoutY="21.0" prefHeight="17.0" prefWidth="337.0" text="General Information (Required for All Requests)" />
+      <CheckBox fx:id="lossPassportCheckBox" layoutX="16.0" layoutY="399.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="141.0" text=" Lost Passport" />
+      <CheckBox fx:id="medicalEmergencyCB" layoutX="16.0" layoutY="428.0" mnemonicParsing="false" text="Medical Emergency" />
+      <CheckBox fx:id="legalCB" layoutX="17.0" layoutY="453.0" mnemonicParsing="false" text="Legal Assistance" />
+      <CheckBox fx:id="otherCB" layoutX="18.0" layoutY="479.0" mnemonicParsing="false" text="Other" />
+      <Label layoutX="37.0" layoutY="608.0" prefHeight="17.0" prefWidth="228.0" text="Country of Issuance" />
+      <Label layoutX="37.0" layoutY="641.0" prefHeight="17.0" prefWidth="228.0" text="Date/Location of Loss" />
+      <Label layoutX="20.0" layoutY="671.0" prefHeight="17.0" prefWidth="165.0" text="For Medical Emergency" />
+      <TextField fx:id="natureOfIssueTF" layoutX="277.0" layoutY="696.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="700.0" prefHeight="17.0" prefWidth="228.0" text="Nature of Issue" />
+      <TextField fx:id="currentMedicationTF" layoutX="277.0" layoutY="733.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="737.0" prefHeight="17.0" prefWidth="228.0" text="Current Medications/Conditions" />
+      <Label layoutX="19.0" layoutY="767.0" prefHeight="17.0" prefWidth="165.0" text="For Legal Assistance:" />
+      <TextField fx:id="natureOfIssueTF" layoutX="277.0" layoutY="792.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="796.0" prefHeight="17.0" prefWidth="228.0" text="Nature of Issue" />
+      <TextField fx:id="currentIssueTF" layoutX="277.0" layoutY="829.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label alignment="CENTER" layoutX="27.0" layoutY="833.0" prefHeight="17.0" prefWidth="228.0" text="Current Status" />
+      <TableView fx:id="clientTableView" layoutX="16.0" layoutY="943.0" prefHeight="197.0" prefWidth="647.0">
+         <columns>
+            <TableColumn fx:id="fullNameTableColumn" prefWidth="169.9999942779541" text="Full Name" />
+            <TableColumn fx:id="phoneNumberTableColumn" prefWidth="150.00001525878906" text="Phone Number" />
+            <TableColumn fx:id="emergencyTableColumn" prefWidth="167.33331298828125" text="Emergency Type " />
+            <TableColumn fx:id="locationTableColumn" prefWidth="159.33328247070312" text="Current Location" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="lossDateDP" layoutX="279.0" layoutY="637.0" />
+   </children>
+</AnchorPane>
