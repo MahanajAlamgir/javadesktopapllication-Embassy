@@ -8,4 +8,12 @@ public class EmbassyOperationsController {
     @FXML
     private ComboBox<?> manageEmbassyOperationsComboboxFxid;
 
+    @FXML
+    void initialize(){
+         manageEmbassyOperationsComboboxFxid.getItems().addAll("review reports", "implement operational improvement");
+
+     }
+
+
+
 }

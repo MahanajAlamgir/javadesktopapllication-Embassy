@@ -20,6 +20,12 @@ public class VisaInterviewController {
     @FXML
     private TableColumn<?, ?> resultTableViewFxid1;
 
+    String Result = "";
+                if(DenyRadioFxid1.isSelected())
+    Result  = "Denied";
+                else if (approveRadioFxid.isSelected())
+    Result = "Approved";
+
     @FXML
     private TableColumn<?, ?> visaInterviewEmailTableViewFxid;
 
@@ -34,6 +40,8 @@ public class VisaInterviewController {
 
     @FXML
     private TableColumn<?, ?> visaInterviewVisaTypeTableViewFxid;
+    ArrayList<ApproveOrDeny> ApproveOrDenyList;
+    ToggleGroup tg;
 
     @FXML
     void sendApprovalEmailOnAction(ActionEvent event) {
@@ -41,11 +49,21 @@ public class VisaInterviewController {
     }
     @FXML
     void showOnlyApprovedOnAction(ActionEvent event) {
+        visaInterviewTableViewFxid.getItems().clear();
+        for(ApproveOrDeny s:ApproveOrDenyList){
+            if (s.getApproveOrDeny().equals("Approve")){
+                visaInterviewTableViewFxid.getItems().add(s);
+
+            }
+        }
+
+
+
 
     }
     @FXML
     void void initialize(){
-        ApproveOrDeny = new ArrayList<>();
+        ApproveOrDenyList = new ArrayList<>();
         idTextFieldFxid.setEditable(false);
         tg = new ToggleGroup();
         DenyRadioFxid1.setToggleGroup(tg);

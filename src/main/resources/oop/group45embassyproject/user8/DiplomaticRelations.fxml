@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.Ramisa.user8.DiplomaticRelations">
    <children>
       <Label layoutX="202.0" layoutY="33.0" prefHeight="57.0" prefWidth="221.0" text="   Diplomatic Relations   " textFill="#e88223" underline="true">
@@ -13,17 +12,17 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="191.0" layoutY="117.0" mnemonicParsing="false" onAction="#engagewithhostCountryOnAction" prefHeight="40.0" prefWidth="137.0" text="engage with host country officials" wrapText="true">
+      <Button layoutX="71.0" layoutY="117.0" mnemonicParsing="false" onAction="#engagewithhostCountryOnAction" prefHeight="40.0" prefWidth="137.0" text="engage with host country officials" wrapText="true">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <Button layoutX="328.0" layoutY="117.0" mnemonicParsing="false" onAction="#reviewbackgroundInformationOnAction" prefHeight="40.0" prefWidth="137.0" text="review background information" wrapText="true">
+      <Button layoutX="208.0" layoutY="117.0" mnemonicParsing="false" onAction="#reviewbackgroundInformationOnAction" prefHeight="40.0" prefWidth="137.0" text="review background information" wrapText="true">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <Button layoutX="466.0" layoutY="117.0" mnemonicParsing="false" onAction="#scheduleMeetingOnAction" prefHeight="40.0" prefWidth="147.0" text="schedule meeting">
+      <Button layoutX="345.0" layoutY="117.0" mnemonicParsing="false" onAction="#scheduleMeetingOnAction" prefHeight="40.0" prefWidth="147.0" text="schedule meeting">
          <font>
             <Font size="11.0" />
          </font>

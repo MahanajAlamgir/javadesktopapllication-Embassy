@@ -7,5 +7,10 @@ public class CrisisManController {
 
     @FXML
     private ComboBox<?> ManagingCrisesComboboxFxid;
+    @FXML
+    void initialize(){
+        ManagingCrisesComboboxFxid.getItems().addAll("coordinating responses", "communicating with affected citizens");
+
+    }
 
 }

@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.oop.cse213.embassyproject.Ramisa.user8.Reporting"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.cse213.embassyproject.Ramisa.user8.Reporting">
+   <children>
+      <Label layoutX="246.0" layoutY="22.0" prefHeight="47.0" prefWidth="177.0" text="  Reports  " textFill="#e88223" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="223.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextArea fx:id="reportsInfoTextArea" layoutX="128.0" layoutY="138.0" prefHeight="188.0" prefWidth="345.0" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="128.0" layoutY="86.0" prefHeight="37.0" prefWidth="345.0" text="Gather information and prepare reports for the home government on host country developments." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

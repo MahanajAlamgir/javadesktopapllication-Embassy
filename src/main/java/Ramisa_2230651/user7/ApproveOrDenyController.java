@@ -16,6 +16,8 @@ public class ApproveOrDenyController {
     @FXML
     private RadioButton approveRadioFxid;
 
+
+
     @FXML
     private TextField emailTextFieldFxid;
 
